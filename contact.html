@@ -12,8 +12,8 @@
     <!-- Responsive navbar -->
     <nav class="bg-green-100 p-2 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl font-bold">GREENDEN</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="40"
-            class="md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="40"
+            class="cursor-pointer md:hidden">
             <path fill-rule="evenodd"
                 d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
                 clip-rule="evenodd" />
@@ -30,6 +30,23 @@
             </li>
         </ul>
     </nav>
+    <!-- Sidenav -->
+     <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width:50%; height:100vh; right:-50%;">
+        <div class="p-8 text-right">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col items-center gap-10 text-gray-500">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="products.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact us</a>
+            </li>
+        </ul>
+     </section>
 
     <section class="px-4 md:px-8 mt-6">
    <div class="max-w-xl mx-auto">
@@ -86,4 +103,5 @@
         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
         <p>@ 2026 Greenday.com</p>
        </section>
+       <script src="contact.js"></script>
 </body>
